@@ -1,0 +1,36 @@
+{
+	"name": "contaoblackforest/contao-backend-page-nested",
+	"description": "",
+	"keywords": [],
+	"type": "contao-module",
+	"homepage": "",
+	"license": "LGPL-3.0+",
+	"authors": [],
+	"support": {},
+	"require": {
+		"php": ">=5.3",
+		"contao-community-alliance/composer-installer": "~1.6",
+		"contao/core": ">2<3.5"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "3.7.*",
+		"squizlabs/php_codesniffer": "1.*"
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"autoload": {
+		"psr-4": {
+			"ContaoBlackforest\\": "src/"
+		}
+	},
+	"extra": {
+		"contao": {
+			"sources": {
+				"module": "system/modules/contao-backend-page-nested"
+			}
+		},
+		"branch-alias": {
+			"dev-develop": "1.0.x-dev"
+		}
+	}
+}
