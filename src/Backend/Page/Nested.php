@@ -152,7 +152,7 @@ class Nested
 			'level'  => $level,
 			'pages'  => $pages,
 			'string' => $string,
-			'do' => \Input::get('do')
+			'do'     => \Input::get('do')
 		);
 
 		return $template->parse($data);
