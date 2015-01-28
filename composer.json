@@ -1,20 +1,32 @@
 {
 	"name": "contaoblackforest/contao-backend-page-nested",
-	"description": "",
-	"keywords": [],
+	"description": "Contao Backend Page Nested Menu for Contao OpenSource CMS",
+	"keywords": ["contao", "backend", "page", "nested", "menu", "module"],
 	"type": "contao-module",
 	"homepage": "",
 	"license": "LGPL-3.0+",
-	"authors": [],
+	"authors": [
+		{
+			"name":"Sven Baumann",
+			"email":"baumann.sv@gmail.com",
+			"homepage":"",
+			"role":"Developer"
+		},
+		{
+			"name":"Dominik Tomasi",
+			"email":"dominik.tomasi@gmail.com",
+			"homepage":"",
+			"role":"Developer"
+		}
+	],
 	"support": {},
 	"require": {
 		"php": ">=5.3",
+		"contao/core": ">=3.2-dev,<4-dev",
 		"contao-community-alliance/composer-installer": "~1.6",
-		"contao/core": ">2<3.5"
+		"bit3/contao-twig": ">=1.11.0.0,<1.12-dev"
 	},
 	"require-dev": {
-		"phpunit/phpunit": "3.7.*",
-		"squizlabs/php_codesniffer": "1.*"
 	},
 	"minimum-stability": "dev",
 	"prefer-stable": true,
@@ -26,7 +38,8 @@
 	"extra": {
 		"contao": {
 			"sources": {
-				"module": "system/modules/contao-backend-page-nested"
+				"module": "system/modules/contao-backend-page-nested",
+				"assets": "assets/contaoblackforest/contao-backend-page-nested"
 			}
 		},
 		"branch-alias": {
