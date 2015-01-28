@@ -128,7 +128,7 @@ class Nested
 	 *
 	 * @return string template
 	 */
-	protected function render($string, $pages, $level = 0)
+	protected static function render($string, $pages, $level = 0)
 	{
 		$level++;
 
@@ -173,7 +173,7 @@ class Nested
 	{
 		if (TL_MODE === 'BE' && $strMode === '.css') {
 			if (file_exists(TL_ROOT . '/assets/contaoblackforest/contao-backend-page-nested/css/style.min.css')) {
-				$file    = new \File('assets/contaoblackforest/contao-backend-page-nested/css/style.css');
+				$file    = new \File('assets/contaoblackforest/contao-backend-page-nested/css/style.min.css');
 				$content = $content . "\n" . $file->getContent();
 
 				unset($GLOBALS['TL_HOOKS']['getCombinedFile']['contao-backend-page-nested']);
