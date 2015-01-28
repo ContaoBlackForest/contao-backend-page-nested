@@ -151,7 +151,8 @@ class Nested
 			'lang'   => $GLOBALS['TL_LANG'],
 			'level'  => $level,
 			'pages'  => $pages,
-			'string' => $string
+			'string' => $string,
+			'do' => \Input::get('do')
 		);
 
 		return $template->parse($data);
@@ -172,7 +173,7 @@ class Nested
 	{
 		if (TL_MODE === 'BE' && $strMode === '.css') {
 			if (file_exists(TL_ROOT . '/assets/contaoblackforest/contao-backend-page-nested/css/style.min.css')) {
-				$file    = new \File('assets/contaoblackforest/contao-backend-page-nested/css/style.min.css');
+				$file    = new \File('assets/contaoblackforest/contao-backend-page-nested/css/style.css');
 				$content = $content . "\n" . $file->getContent();
 
 				unset($GLOBALS['TL_HOOKS']['getCombinedFile']['contao-backend-page-nested']);
