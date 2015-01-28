@@ -1,0 +1,25 @@
+{% if level == 1 %}
+<div class="tl_nested_pages">
+	<ul class="tl_listing tl_tree level_{{ level - 1 }}">
+		<li>{{ string }}
+			{% endif %}
+
+			<ul class="level_{{ level }}">
+				{% for page in pages %}
+					<li class="tl_file click2edit{% if page.sub_pages %} tl_sub_page{% endif %}" onmouseover="Theme.hoverDiv(this,1)" onmouseout="Theme.hoverDiv(this,0)" onclick="Theme.toggleSelect(this)">
+						<a href="contao/main.php?do=feRedirect&page={{ page.id }}" target="_blank" title="{{ lang.MSC.view }}">{{ page.status_image }}</a>
+						<a href="contao/main.php?do=page&node={{ page.id }}" title="{{ lang.MSC.selectNode }}">{{ page.title }}</a>
+
+						{% if page.sub_pages %}
+							{{ page.sub_pages }}
+						{% endif %}
+
+					</li>
+				{% endfor %}
+			</ul>
+
+			{% if level == 1 %}
+		</li>
+	</ul>
+</div>
+{% endif %}
