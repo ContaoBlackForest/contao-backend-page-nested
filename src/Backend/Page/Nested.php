@@ -128,7 +128,7 @@ class Nested
 	 *
 	 * @return string template
 	 */
-	protected function render($string, $pages, $level = 0)
+	protected static function render($string, $pages, $level = 0)
 	{
 		$level++;
 
@@ -151,7 +151,8 @@ class Nested
 			'lang'   => $GLOBALS['TL_LANG'],
 			'level'  => $level,
 			'pages'  => $pages,
-			'string' => $string
+			'string' => $string,
+			'do' => \Input::get('do')
 		);
 
 		return $template->parse($data);

@@ -1,6 +1,7 @@
 /**
  * Contao Backend Page Nested Menu (C) 2015 Sven Baumann
  */
+ul.tl_listing.tl_tree_xtnd,
 ul.tl_listing.tl_tree {
 	position: relative;
 }

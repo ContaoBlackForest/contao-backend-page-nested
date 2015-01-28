@@ -8,7 +8,7 @@
 				{% for page in pages %}
 					<li class="tl_file click2edit{% if page.sub_pages %} tl_sub_page{% endif %}" onmouseover="Theme.hoverDiv(this,1)" onmouseout="Theme.hoverDiv(this,0)" onclick="Theme.toggleSelect(this)">
 						<a href="contao/main.php?do=feRedirect&page={{ page.id }}" target="_blank" title="{{ lang.MSC.view }}">{{ page.status_image }}</a>
-						<a href="contao/main.php?do=page&node={{ page.id }}" title="{{ lang.MSC.selectNode }}">{{ page.title }}</a>
+						<a href="contao/main.php?do={{ do }}&node={{ page.id }}" title="{{ lang.MSC.selectNode }}">{{ page.title }}</a>
 
 						{% if page.sub_pages %}
 							{{ page.sub_pages }}

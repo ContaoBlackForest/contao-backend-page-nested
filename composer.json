@@ -1,33 +1,45 @@
 {
 	"name": "contaoblackforest/contao-backend-page-nested",
 	"description": "Contao Backend Page Nested Menu for Contao OpenSource CMS",
-	"keywords": ["contao", "backend", "page", "nested", "menu", "module"],
+	"keywords": [
+		"contao",
+		"backend",
+		"page",
+		"nested",
+		"menu",
+		"module"
+	],
 	"type": "contao-module",
 	"homepage": "",
 	"license": "LGPL-3.0+",
 	"authors": [
 		{
-			"name":"Sven Baumann",
-			"email":"baumann.sv@gmail.com",
-			"homepage":"",
-			"role":"Developer"
+			"name": "Sven Baumann",
+			"email": "baumann.sv@gmail.com",
+			"homepage": "",
+			"role": "Developer"
 		},
 		{
-			"name":"Dominik Tomasi",
-			"email":"dominik.tomasi@gmail.com",
-			"homepage":"",
-			"role":"Developer"
+			"name": "Dominik Tomasi",
+			"email": "dominik.tomasi@gmail.com",
+			"homepage": "",
+			"role": "Developer"
 		}
 	],
-	"support": {},
+	"support": {
+		"email": "baumann.sv@gmail.com",
+		"issues": "https://github.com/ContaoBlackforest/contao-backend-page-nested/issues",
+		"wiki": "https://github.com/ContaoBlackforest/contao-backend-page-nested/wiki",
+		"irc": "",
+		"source": "https://github.com/ContaoBlackforest/contao-backend-page-nested"
+	},
 	"require": {
 		"php": ">=5.3",
 		"contao/core": ">=3.2-dev,<4-dev",
 		"contao-community-alliance/composer-installer": "~1.6",
 		"bit3/contao-twig": ">=1.11.0.0,<1.12-dev"
 	},
-	"require-dev": {
-	},
+	"require-dev": {},
 	"minimum-stability": "dev",
 	"prefer-stable": true,
 	"autoload": {
