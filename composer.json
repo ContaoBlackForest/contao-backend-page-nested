@@ -52,7 +52,10 @@
 			"sources": {
 				"module": "system/modules/contao-backend-page-nested",
 				"assets": "assets/contaoblackforest/contao-backend-page-nested"
-			}
+			},
+			"runonce": [
+				"runonce/clearAssets.php"
+			]
 		},
 		"branch-alias": {
 			"dev-develop": "1.0.x-dev"
