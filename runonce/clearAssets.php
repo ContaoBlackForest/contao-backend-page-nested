@@ -6,7 +6,7 @@
  * PHP version 5
  *
  * @package   contaoblackforest/contao-backend-page-nested
- * @file      runonce.php
+ * @file      clearAssets.php
  * @author    Sven Baumann <baumann.sv@gmail.com>
  * @author    Dominik Tomasi <dominik.tomasi@gmail.com>
  * @license   LGPL-3.0+
@@ -15,9 +15,9 @@
 
 
 /**
- * Class testonce
+ * Class clearAssets
  */
-class runonce
+class clearAssets
 {
 
 	/**
@@ -34,6 +34,5 @@ class runonce
 	}
 }
 
-
-$runOnce = new runonce();
-$runOnce->run();
+$clearAssets = new clearAssets();
+$clearAssets->run();
